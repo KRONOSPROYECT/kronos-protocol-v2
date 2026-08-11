@@ -3,75 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KRONOS V2 - EL SISTEMA VIEJO HA MUERTO</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<title>KRONOS V2 - Infraestructura Sin Intermediarios</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--gold:#FFD700;--red:#FF0033;--bg:#05070A}
-body{margin:0;background:var(--bg);color:white;font-family:'Inter',Arial;overflow-x:hidden}
-h1,h2{font-family:'Orbitron',sans-serif}
-.hero{min-height:100vh;background:radial-gradient(circle at 50% 0%, #1a2a4a 0%, #05070A 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center}
-.badge{border:1px solid var(--red);color:var(--red);padding:8px 18px;border-radius:50px;font-size:11px;letter-spacing:3px;animation:blink 1s infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero h1{font-size:58px;color:var(--gold);margin:20px 0 0;line-height:0.9;text-shadow:0 0 30px var(--gold)}
-.hero h2{font-size:18px;color:white;letter-spacing:8px;margin:10px}
-.obsolete{font-size:32px;font-weight:900;color:var(--red);margin:20px 0;letter-spacing:2px}
-.countdown{display:flex;gap:15px;margin:25px 0}
-.cd-box{background:rgba(255,255,255,0.05);border:1px solid #333;padding:15px 20px;border-radius:12px;min-width:70px}
-.cd-box span{font-size:28px;color:var(--gold);font-weight:900;font-family:'Orbitron'}
-.cd-box small{display:block;font-size:9px;color:#888;letter-spacing:2px}
-.btn{display:inline-block;background:linear-gradient(90deg,var(--gold),#FF8C00);color:black;padding:22px 40px;border-radius:14px;text-decoration:none;font-weight:900;font-size:20px;margin-top:20px;box-shadow:0 0 40px rgba(255,215,0,0.4);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-.world{padding:40px 20px;background:#080C14}
-.country{display:flex;justify-content:space-between;border-bottom:1px solid #1a1a1a;padding:14px 0;font-size:13px}
-.status{color:#00FF88}
-.status.off{color:var(--red)}
-.alert{background:var(--red);color:white;text-align:center;padding:12px;font-weight:900;letter-spacing:2px;font-size:12px}
+:root{--gold:#FFD700;--green:#00FF88;--bg:#05070A}
+body{margin:0;background:var(--bg);color:white;font-family:'Inter',sans-serif}
+h1,h2,h3{font-family:'Orbitron',sans-serif}
+.hero{background:radial-gradient(circle at 50% 0%, #122a22 0%, #05070A 65%);text-align:center;padding:70px 25px}
+.badge{border:1px solid var(--green);color:var(--green);padding:8px 18px;border-radius:50px;font-size:11px;letter-spacing:3px;display:inline-block}
+.hero h1{font-size:50px;color:var(--gold);line-height:0.9;margin:20px 0;text-shadow:0 0 20px rgba(255,215,0,0.2)}
+.hero h2{font-size:15px;letter-spacing:7px;color:#888}
+.principle{font-size:26px;font-weight:800;margin:25px auto;max-width:700px;line-height:1.2;color:white}
+.principle span{color:var(--green)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;max-width:700px;margin:30px auto;text-align:left}
+.card{border:1px solid #1e1e1e;background:rgba(255,255,255,0.03);border-radius:16px;padding:18px}
+.card h3{font-size:12px;color:var(--gold);letter-spacing:2px;margin:0 0 8px}
+.card p{font-size:12px;color:#999;line-height:1.5;margin:0}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--gold),#FF8C00);color:black;padding:20px 40px;border-radius:14px;text-decoration:none;font-weight:900;font-size:18px;margin-top:20px}
+.footer{border-top:1px solid #111;padding:30px 20px;text-align:center;color:#555;font-size:11px;line-height:1.6}
 </style>
 </head>
 <body>
-<div class="alert">⚠️ ALERTA GLOBAL: EL SISTEMA FINANCIERO TRADICIONAL QUEDARÁ OBSOLETO EN 2027 - KRONOS YA ESTÁ ACTIVO</div>
-
 <div class="hero">
-<div class="badge">● LIVE - 2,419 NODOS SINCRONIZADOS</div>
+<div class="badge">● PROTOCOLO EN DESARROLLO - PRINCIPIO VERIFICABLE</div>
 <h1>LEGADO<br>2099</h1>
 <h2>KRONOS PROTOCOL V2</h2>
-<div class="obsolete">USA • CHINA • EU • OBSOLETOS</div>
-<p style="max-width:500px;color:#aaa;font-size:14px;line-height:1.6">127 jurisdicciones han abandonado el viejo sistema. Mientras los gobiernos discuten, nosotros ya sincronizamos el mundo. No es el futuro. Es el reemplazo.</p>
 
-<div class="countdown">
-<div class="cd-box"><span id="h">72</span><small>HORAS</small></div>
-<div class="cd-box"><span id="m">00</span><small>MINUTOS</small></div>
-<div class="cd-box"><span id="s">00</span><small>SEGUNDOS</small></div>
-</div>
-<p style="color:var(--red);font-size:11px;letter-spacing:3px">PARA CIERRE DE ACCESO FUNDADOR</p>
+<div class="principle">LO QUE LAS EMPRESAS BUSCAN HOY:<br><span>UNA INFRAESTRUCTURA DONDE NADIE ESTÉ POR ENCIMA DE ELLAS.</span></div>
 
-<a class="btn" href="https://wa.me/527225862335?text=QUIERO%20SER%20FUNDADOR%20KRONOS%20V2%20ANTES%20DE%20QUE%20CIERRE">⚡ ACCEDER AHORA - SER FUNDADOR</a>
-<p style="margin-top:15px;font-size:11px;color:#666">Contacto directo: contacto@kronos3hash.online | WhatsApp: 7225862335<br>SOLO 127 FUNDADORES - 89 YA TOMADOS</p>
-</div>
+<p style="max-width:600px;margin:0 auto;color:#aaa;font-size:14px;line-height:1.7">
+Esta es mi propuesta, honesta y desde cero en Ecatepec:<br><br>
+<strong style="color:white">KRONOS es un protocolo en construcción cuyo principio fundamental es que no haya un dueño central.</strong> Ni yo, ni un banco, ni un país por encima de ti. El código, no una empresa, es el que valida. Eso es lo que buscan las empresas: soberanía, no permiso.
+</p>
 
-<div class="world">
-<h2 style="text-align:center;color:var(--gold);letter-spacing:4px">ESTADO GLOBAL EN TIEMPO REAL</h2>
-<div style="max-width:600px;margin:20px auto">
-<div class="country"><span>🇺🇸 ESTADOS UNIDOS - FED</span><span class="status off">OBSOLETO</span></div>
-<div class="country"><span>🇪🇺 UNION EUROPEA - BCE</span><span class="status off">OBSOLETO</span></div>
-<div class="country"><span>🇨🇳 CHINA - SWIFT</span><span class="status off">OBSOLETO</span></div>
-<div class="country"><span>🇲🇽 MEXICO - KRONOS NODE MX01</span><span class="status">SINCRONIZADO ●</span></div>
-<div class="country"><span>🇪🇸 ESPAÑA - KRONOS NODE ES01</span><span class="status">SINCRONIZADO ●</span></div>
-<div class="country"><span>🇦🇺 AUSTRALIA - KRONOS NODE AU01</span><span class="status">SINCRONIZADO ●</span></div>
-<div class="country"><span>🌐 127 JURISDICCIONES KRONOS</span><span class="status">ACTIVAS ●</span></div>
-</div>
+<div class="grid">
+<div class="card"><h3>🔓 SIN DUEÑO CENTRAL</h3><p>Principio de diseño: código abierto y auditable. Nadie puede apagarlo o censurarlo unilateralmente. Verdad técnica, no promesa.</p></div>
+<div class="card"><h3>🤝 SIN INTERMEDIARIOS</h3><p>Visión: interacción directa entre partes. Reduciendo costos y dependencia de terceros. Lo que toda empresa quiere: eficiencia real.</p></div>
+<div class="card"><h3>🌐 INTEROPERABLE</h3><p>Objetivo: que pueda hablar con 127 jurisdicciones futuras. No que ya lo haga. Estamos construyendo la base para eso.</p></div>
+<div class="card"><h3>👁️ TRANSPARENTE</h3><p>Todo el desarrollo es público en GitHub. Lo que ves es lo que hay. Sin letra chiquita.</p></div>
 </div>
 
-<script>
-// cuenta regresiva falsa para urgencia
-let sec=72*3600;
-setInterval(()=>{
-sec--;
-let h=Math.floor(sec/3600), m=Math.floor((sec%3600)/60), s=sec%60;
-document.getElementById('h').innerText=h;
-document.getElementById('m').innerText=m.toString().padStart(2,'0');
-document.getElementById('s').innerText=s.toString().padStart(2,'0');
-},1000);
-</script>
+<a class="btn" href="https://wa.me/527225862335?text=Hola%20vi%20el%20principio%20de%20KRONOS%20sin%20due%C3%B1o%20central%20y%20quiero%20hablar">QUIERO ENTENDER EL PRINCIPIO</a>
+<br>
+<a style="color:#666;text-decoration:none;font-size:12px;margin-top:15px;display:inline-block" href="mailto:contacto@kronos3hash.online">contacto@kronos3hash.online | Ecatepec, MX</a>
+</div>
+
+<div class="footer">
+KRONOS Protocol V2 © 2026 - Proyecto conceptual en desarrollo por 1 fundador independiente.<br>
+<strong>Verdad legal:</strong> No es un banco, no es un producto financiero regulado, no promete obsolescencia de ningún sistema.<br>
+Es una propuesta de infraestructura autónoma y abierta, en etapa de diseño y prototipo.<br>
+Contacto real: 722 586 2335
+</div>
 </body>
 </html>
