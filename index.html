@@ -2,73 +2,76 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KRONOS Protocol V2 - Legado 2099</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRONOS V2 - EL SISTEMA VIEJO HA MUERTO</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--gold:#D4B67A;--gold2:#8C6A3C;--bg:#060B18;--line:rgba(212,182,122,0.2)}
-body{margin:0;background:#060B18;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;border-bottom:1px solid var(--line);background:rgba(6,11,24,0.9);position:sticky;top:0;z-index:10}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-icon{width:42px;height:42px;border:1.5px solid var(--gold);transform:rotate(0deg);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);display:grid;place-items:center;color:var(--gold)}
-.nav{display:flex;gap:24px;font-size:11px;letter-spacing:1.5px;opacity:0.7}
-.nav b{border-bottom:1.5px solid var(--gold);padding-bottom:4px;opacity:1}
-.btn-gold{background:linear-gradient(180deg,var(--gold),var(--gold2));color:#000;padding:12px 28px;border:none;font-weight:700;letter-spacing:1px;cursor:pointer;border-radius:6px}
-.btn-out{border:1px solid var(--line);background:transparent;color:#fff;padding:12px 28px;border-radius:6px;letter-spacing:1px;cursor:pointer}
-.hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:30px;padding:60px 40px;align-items:center;position:relative}
-.hero h1{font-family:'Cinzel',serif;font-size:72px;line-height:0.9;margin:0;color:var(--gold);font-weight:400}
-.hero h1 span{color:#fff}
-.sub{font-size:11px;letter-spacing:3px;color:var(--gold);margin:18px 0;opacity:0.8}
-.desc{font-size:14px;line-height:1.6;opacity:0.65;max-width:480px;margin-bottom:28px}
-.globe-wrap{position:relative;width:100%;height:480px;display:grid;place-items:center}
-.globe{width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(212,182,122,0.3), transparent 60%), url('https://i.ibb.co/3m8x1jY5/globe.png');border:1px solid var(--line);box-shadow:0 0 80px rgba(212,182,122,0.15);animation:spin 60s linear infinite}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.badges{position:absolute;font-size:8px;border:1px solid var(--line);padding:8px 12px;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px)}
-.b1{top:10%;left:10%}
-.b2{bottom:20%;left:0%}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:20px 40px 60px}
-.card{border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.2));padding:28px;text-align:center;position:relative}
-.card h3{font-size:12px;letter-spacing:2px;margin:16px 0 8px;color:var(--gold)}
-.card p{font-size:11px;opacity:0.6;line-height:1.5}
-footer{display:flex;justify-content:space-between;padding:14px 40px;border-top:1px solid var(--line);font-size:9px;letter-spacing:1px;opacity:0.5}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.globe{width:300px;height:300px}.nav{display:none}}
+:root{--gold:#FFD700;--red:#FF0033;--bg:#05070A}
+body{margin:0;background:var(--bg);color:white;font-family:'Inter',Arial;overflow-x:hidden}
+h1,h2{font-family:'Orbitron',sans-serif}
+.hero{min-height:100vh;background:radial-gradient(circle at 50% 0%, #1a2a4a 0%, #05070A 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center}
+.badge{border:1px solid var(--red);color:var(--red);padding:8px 18px;border-radius:50px;font-size:11px;letter-spacing:3px;animation:blink 1s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-size:58px;color:var(--gold);margin:20px 0 0;line-height:0.9;text-shadow:0 0 30px var(--gold)}
+.hero h2{font-size:18px;color:white;letter-spacing:8px;margin:10px}
+.obsolete{font-size:32px;font-weight:900;color:var(--red);margin:20px 0;letter-spacing:2px}
+.countdown{display:flex;gap:15px;margin:25px 0}
+.cd-box{background:rgba(255,255,255,0.05);border:1px solid #333;padding:15px 20px;border-radius:12px;min-width:70px}
+.cd-box span{font-size:28px;color:var(--gold);font-weight:900;font-family:'Orbitron'}
+.cd-box small{display:block;font-size:9px;color:#888;letter-spacing:2px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--gold),#FF8C00);color:black;padding:22px 40px;border-radius:14px;text-decoration:none;font-weight:900;font-size:20px;margin-top:20px;box-shadow:0 0 40px rgba(255,215,0,0.4);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.world{padding:40px 20px;background:#080C14}
+.country{display:flex;justify-content:space-between;border-bottom:1px solid #1a1a1a;padding:14px 0;font-size:13px}
+.status{color:#00FF88}
+.status.off{color:var(--red)}
+.alert{background:var(--red);color:white;text-align:center;padding:12px;font-weight:900;letter-spacing:2px;font-size:12px}
 </style>
 </head>
 <body>
-<header>
-<div class="logo"><div class="logo-icon">◈</div><div><div style="letter-spacing:3px;font-size:14px">KRONOS</div><div style="font-size:8px;letter-spacing:4px;opacity:0.6">PROTOCOL V2</div></div></div>
-<div class="nav"><b>INICIO</b><span>PROTOCOLO</span><span>EMBAJADA</span><span>GOBERNANZA</span><span>SEGURIDAD</span><span>CONTACTO</span></div>
-<button class="btn-out" style="padding:8px 18px;font-size:10px;border-color:var(--gold)">ACCEDER</button>
-</header>
+<div class="alert">⚠️ ALERTA GLOBAL: EL SISTEMA FINANCIERO TRADICIONAL QUEDARÁ OBSOLETO EN 2027 - KRONOS YA ESTÁ ACTIVO</div>
 
-<section class="hero">
-<div>
-<h1>Legado 2099</h1>
-<div class="sub">KRONOS PROTOCOL V2 — EMBAJADA DIGITAL INTERNACIONAL</div>
-<div class="desc">La primera embajada digital soberana. Infraestructura de gobernanza descentralizada, identidad on-chain y diplomacia digital para un nuevo orden global.</div>
-<div style="display:flex;gap:12px;flex-wrap:wrap">
-<button class="btn-gold">ACCEDER AL PROTOCOLO</button>
-<button class="btn-out">VER WHITEPAPER</button>
-</div>
-<div style="display:flex;gap:18px;margin-top:24px;font-size:9px;opacity:0.5">
-<span>🛡️ Seguridad Cuántica • Certificado</span><span>🌐 127 Jurisdicciones • 24/7</span><span>🔗 On-Chain • Auditable</span>
-</div>
-</div>
-<div class="globe-wrap">
-<div class="badges b1">LAT 40.4168°N /<br>LON 3.7038°W</div>
-<div class="globe" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Globe_icon.svg/768px-Globe_icon.svg.png');background-size:cover;filter:sepia(1) hue-rotate(10deg) brightness(1.3)"></div>
-<div class="badges" style="top:20%;right:0%">📈<br>SINCRONIZADO</div>
-<div class="badges b2">NODOS ACTIVOS:<br>2,419</div>
-<div class="badges" style="bottom:10%;right:5%">LAT -33.9° / LON 151°<br><span style="color:#4ade80">● SINCRONIZADO</span></div>
-</div>
-</section>
+<div class="hero">
+<div class="badge">● LIVE - 2,419 NODOS SINCRONIZADOS</div>
+<h1>LEGADO<br>2099</h1>
+<h2>KRONOS PROTOCOL V2</h2>
+<div class="obsolete">USA • CHINA • EU • OBSOLETOS</div>
+<p style="max-width:500px;color:#aaa;font-size:14px;line-height:1.6">127 jurisdicciones han abandonado el viejo sistema. Mientras los gobiernos discuten, nosotros ya sincronizamos el mundo. No es el futuro. Es el reemplazo.</p>
 
-<section class="cards">
-<div class="card"><div style="font-size:28px">◈</div><h3>IDENTIDAD SOBERANA</h3><p>Identidades digitales verificadas on-chain. Privacidad por diseño. KYC descentralizado conforme a estándares 2099.</p></div>
-<div class="card"><div style="font-size:28px">🏛️</div><h3>JURISDICCIÓN DIGITAL</h3><p>Marco legal autónomo. Arbitraje smart-contract. Tratados internacionales programables.</p></div>
-<div class="card"><div style="font-size:28px">⛓️</div><h3>COMERCIO NEUTRO</h3><p>Corredor económico neutral. Liquidación instantánea. Corredor multi-moneda sin fronteras.</p></div>
-</section>
+<div class="countdown">
+<div class="cd-box"><span id="h">72</span><small>HORAS</small></div>
+<div class="cd-box"><span id="m">00</span><small>MINUTOS</small></div>
+<div class="cd-box"><span id="s">00</span><small>SEGUNDOS</small></div>
+</div>
+<p style="color:var(--red);font-size:11px;letter-spacing:3px">PARA CIERRE DE ACCESO FUNDADOR</p>
 
-<footer><span>KRONOS PROTOCOL V2 © 2099 - EMBAJADA DIGITAL INTERNACIONAL</span><span>ESTADO DE RED: OPERACIONAL • BLOQUE 9,284,107 • LATENCIA &lt;12ms</span></footer>
+<a class="btn" href="https://wa.me/527225862335?text=QUIERO%20SER%20FUNDADOR%20KRONOS%20V2%20ANTES%20DE%20QUE%20CIERRE">⚡ ACCEDER AHORA - SER FUNDADOR</a>
+<p style="margin-top:15px;font-size:11px;color:#666">Contacto directo: contacto@kronos3hash.online | WhatsApp: 7225862335<br>SOLO 127 FUNDADORES - 89 YA TOMADOS</p>
+</div>
+
+<div class="world">
+<h2 style="text-align:center;color:var(--gold);letter-spacing:4px">ESTADO GLOBAL EN TIEMPO REAL</h2>
+<div style="max-width:600px;margin:20px auto">
+<div class="country"><span>🇺🇸 ESTADOS UNIDOS - FED</span><span class="status off">OBSOLETO</span></div>
+<div class="country"><span>🇪🇺 UNION EUROPEA - BCE</span><span class="status off">OBSOLETO</span></div>
+<div class="country"><span>🇨🇳 CHINA - SWIFT</span><span class="status off">OBSOLETO</span></div>
+<div class="country"><span>🇲🇽 MEXICO - KRONOS NODE MX01</span><span class="status">SINCRONIZADO ●</span></div>
+<div class="country"><span>🇪🇸 ESPAÑA - KRONOS NODE ES01</span><span class="status">SINCRONIZADO ●</span></div>
+<div class="country"><span>🇦🇺 AUSTRALIA - KRONOS NODE AU01</span><span class="status">SINCRONIZADO ●</span></div>
+<div class="country"><span>🌐 127 JURISDICCIONES KRONOS</span><span class="status">ACTIVAS ●</span></div>
+</div>
+</div>
+
+<script>
+// cuenta regresiva falsa para urgencia
+let sec=72*3600;
+setInterval(()=>{
+sec--;
+let h=Math.floor(sec/3600), m=Math.floor((sec%3600)/60), s=sec%60;
+document.getElementById('h').innerText=h;
+document.getElementById('m').innerText=m.toString().padStart(2,'0');
+document.getElementById('s').innerText=s.toString().padStart(2,'0');
+},1000);
+</script>
 </body>
 </html>
